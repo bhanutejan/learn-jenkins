@@ -4,6 +4,7 @@ pipeline {
             label 'AGENT-1'
             }
     } 
+    //build
     stages {
         stage('Development') { 
             steps { 
@@ -21,6 +22,7 @@ pipeline {
             }
         }
     }
+    // post build
     post {
         always {
             echo 'I wll always say Hello Again..!'
