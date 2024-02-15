@@ -8,9 +8,10 @@ pipeline {
         GREETING = 'Hello Jenkins,How are you'
     }
     options {
+        ansiColor('xterm')
         timeout(time: 1, unit: 'HOURS')
         disableConcurrentBuilds()
-        ansiColor('xterm')
+        
     }
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
