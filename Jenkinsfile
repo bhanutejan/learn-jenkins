@@ -38,7 +38,7 @@ pipeline {
             steps { 
                 echo 'Hello Deploy' 
                 sh """
-                    echo "Here I wrote shell script"
+                    echo "Here I wrote hi hello dfdfshell script"
                     echo  "$GREETING"
                     echo  "$GREETING"
                     #sleep 10
